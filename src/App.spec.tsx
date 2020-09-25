@@ -3,12 +3,14 @@ import * as renderer from 'react-test-renderer';
 
 import App from './App';
 
-// describe('<App />', () => {
-//   it('matches last snapshot', () => {
-//     const tree = renderer.create(<App />).toJSON();
-//     expect(tree).toMatchSnapshot();
-//   });
-// });
+describe('<App />', () => {
+  it('matches last snapshot', () => {
+    const tree = renderer.create(<App />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
+
 
 describe('simple test, no React Render', () => {
   it('1 is 1', () => {
