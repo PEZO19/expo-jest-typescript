@@ -10,7 +10,12 @@ describe('<App />', () => {
   });
 });
 
-
+describe('another react render', () => {
+  it('matches last snapshot', () => {
+    const tree = renderer.create(<App />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
 
 describe('simple test, no React Render', () => {
   it('1 is 1', () => {
