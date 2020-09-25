@@ -1,7 +1,8 @@
 import {Platform, View, Text} from 'react-native';
 // import Navigator from './screens/Navigator';
 import { NavigationContainer } from '@react-navigation/native';
-import React from "react";
+// import React from "react";
+import * as React from "react"
 
 // import { createAppContainer } from 'react-navigation';
 // import { createBrowserApp } from '@react-navigation/web';
